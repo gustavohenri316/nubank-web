@@ -1,8 +1,9 @@
+import { Cart } from '../../components/Cart'
 import { Header } from '../../components/Header'
 import { Navbar } from '../../components/Navbar'
 import { Options } from '../../components/Options'
 import { Sidebar } from '../../components/Sidebar'
-import { Container } from './styles'
+import { Container, Content } from './styles'
 
 export function Home() {
   return (
@@ -10,7 +11,10 @@ export function Home() {
       <Navbar />
       <Header />
       <Options />
-      <Sidebar/>
+      <Content>
+        <Sidebar />
+        <Cart />
+      </Content>
     </Container>
   )
 }
