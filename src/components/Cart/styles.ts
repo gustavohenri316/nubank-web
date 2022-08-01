@@ -10,6 +10,18 @@ export const Container = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  cursor: pointer;
+
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover{
+    box-shadow: 0px 0px 23px -1px rgba(130, 10, 209, 0.2);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
   header{
     display: flex;
